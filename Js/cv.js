@@ -63,5 +63,5 @@ const myProject = [
 	},
 ];
 myProject.forEach( value => {
-    $('#myproject-items').append('<div style="padding: 5px 0px 5px 0px">'+value.nameProject+':<a href="'+value.linkHref+'">'+value.contentProject+'</a></div>')
+    $('#myproject-items').append('<div style="padding: 5px 0px 5px 0px">'+value.nameProject+':<a href="'+value.linkHref+'"> '+value.contentProject+'</a></div>')
 })
