@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/reset.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="/Js/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
 </head>
 <body>
     <div class="mycv">
-        <!-- CV Left -->
+        <!-- CV Left Start -->
         <div class="informationLeft">
             <div class="informationLeft__img">
                 <img src="img/img.jpg">
@@ -33,37 +35,11 @@
                     <div id="email">Email</div>
                     <div class="BigContent--Child--Content">nguyenthanhcongvdubqn@gmail.com</div>
                 </div>
-                <div class="informationLeft__BigContent--Child">
-                    <div class="BigContent--Child--Titlle">SKILLS</div>
-                    <div class="skills">
-                        <disv class="skills__block">
-                            <div class="skills__block--name">HTML</div>
-                            <div class="skills__block--bar">
-                                <div class="skills__block--barHTML"></div>
-                            </div>
-                        </disv>
-                        <disv class="skills__block">
-                            <div class="skills__block--name">CSS</div>
-                            <div class="skills__block--bar">
-                                <div class="skills__block--barCSS"></div>
-                            </div>
-                        </disv>
-                        <disv class="skills__block">
-                            <div class="skills__block--name">Javascript</div>
-                            <div class="skills__block--bar">
-                                <div class="skills__block--barJavascript"></div>
-                            </div>
-                        </disv>
-                        <div class="skills__block">
-                            <div class="skills__block--name">Photoshop</div>
-                            <div class="skills__block--bar">
-                                <div class="skills__block--barPhotoshop"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            </div>
+        </div>
+        <!-- CV Left End -->
+
+        <!-- CV Right Start -->
         <div class="informationRight">
             <div class="informationRight__Block">
                 <div class="informationRight__Block--TitleHeader
@@ -78,16 +54,15 @@
                         <div class="Data--Child--Left">2019-2021</div>
                         <div class="Data--Child--Right">
                             <p>双葉外語学校</p>
-                            <p>日本語を勉強しました。その上、日本の文化を調べていました。</p>
                         </div>
                     </div>
                     <div class="Block--Data--Child">
                         <div class="Data--Child--LeftLast">2021-2023</div>
                         <div class="Data--Child--Right">
                             <p>大原簿記公務員医療情報ビジネス専門学校津田沼校</p>
-                            <p>HTML, CSS, Javascript, Python, Java, PHPを学んでいました。理論知識を勉強するにかわえて先生に小さいプロジェクトを作って教えてもらいました。</p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="informationRight__Block">
@@ -111,13 +86,23 @@
             <div class="informationRight__Block">
                 <div class="informationRight__Block--Title
                 ">MY PROJECT</div>
-                <div>
-                    <div>
-                        Link Github: <a href="https://github.com/nguyenthanhcongjp">https://github.com/nguyenthanhcongjp</a>
+                <div id="myproject-items">
+                </div>
+            </div>
+            <div class="informationRight__Block">
+                <div class="informationRight__Block--Title">
+                    SKIILS
+                </div>
+                <div class="informationRight__Block--Data">
+                    <div class="vmob">
+                        <ul id="accordion" class="accordion">
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- CV Right End -->
     </div>
+    <script src="/Js/cv.js"></script>
 </body>
 </html>

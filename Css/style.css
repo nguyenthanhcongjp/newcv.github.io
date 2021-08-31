@@ -1,3 +1,4 @@
+
 body {
     background-color: #C4C4C4;
 }
@@ -12,7 +13,7 @@ body {
     width: 35%;
     background-color: #26252C;
 }
-/* img  */
+/* img Start */
 .informationLeft__img {
     width: 100%;
     height: 312px;
@@ -23,6 +24,8 @@ body {
     object-fit: cover;
     object-position: top;
 }
+/* img End */
+
 .informationLeft__BigContent {
     padding: 20px 30px;
 }
@@ -40,40 +43,9 @@ body {
 #phone, #email {
     color: white;
 }
-.skills__block {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-.skills__block--bar {
-    width: 125px;
-    height: 20px;
-    background-color: #fff;
-    position: relative;
-}
-.skills__block--barHTML, .skills__block--barCSS, .skills__block--barJavascript, .skills__block--barPhotoshop {
-    position: absolute;
-    height: 100%;
-    background-color: #0175b2;
-}
-.skills__block--barHTML {
-    width: 50%;
-}
-.skills__block--barCSS {
-    width: 50%;
-}
-.skills__block--barJavascript {
-    width: 30%;
-}
-.skills__block--barPhotoshop {
-    width: 15%;
-}
-.skills__block--name {
-    color: #84838b;
-}
 
 
-/* Code informationRight */
+/* Code informationRight Start */
 .informationRight {
     width: 65%;
     padding: 20px 40px;
@@ -130,7 +102,7 @@ body {
     right: 0px;
     top: 5px;
 }
-/*  */
+
 .informationRight__Block--TitleHeader {
     font-size: 32px;
     color: #26252d;
@@ -143,3 +115,62 @@ body {
     color: #26252d;
     letter-spacing: 3px;
 }
+/* Code informationRight Start */
+
+/* Skill Start */
+.accordion .link {
+    display: block;
+    padding: 60px 10px 0px 40px;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #1a1a1a;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.accordion li i.fa-chevron-left {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+  
+.accordion li.open .link { color: #1a1a1a; }
+  
+.accordion li.open i { color: #0175b2; }
+  
+.accordion li.open i.fa-chevron-left {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.submenu {
+    display: none;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #1a1a1a;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+ul { 
+    list-style-type: none; 
+}
+/* Skill End */
